@@ -9,7 +9,7 @@ const app = new Hono();
 app.use("*", cors());
 
 app.get("/", (c) => {
-  return c.json({ message: "Server is alive" });
+  return c.json({ message: "Server is alive" }, 200);
 });
 
 // gRPC route
